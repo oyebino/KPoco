@@ -1,0 +1,12 @@
+- test:
+    name: case_01
+    desc: 搜索-01
+    send_data:
+      carLicenseNumber: 粤X00001
+      owner: 接口测试
+      specialCarTypeConfigId: 130
+    except:
+      status: 1
+      resultCode: 0
+
+

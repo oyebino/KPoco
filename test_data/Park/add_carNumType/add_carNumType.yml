@@ -1,0 +1,44 @@
+- test:
+    name: test_add_yellowCarNum_and_pay
+    desc: 添加黄牌车-进出场缴费一次
+    send_data:
+      carCode: 黄
+      carType: 黄牌
+    except:
+      resultStatus: True
+
+- test:
+    name: test_add_whiteCarNum_and_pay
+    desc: 添加白牌车-进出场缴费一次
+    send_data:
+      carCode: 白
+      carType: 白牌
+    except:
+      resultStatus: True
+
+- test:
+    name: test_add_blackCarNum_and_pay
+    desc: 添加黑牌车-进出场缴费一次
+    send_data:
+      carCode: 黑
+      carType: 黑牌
+    except:
+      resultStatus: True
+
+- test:
+    name: test_add_greenCarNum_and_pay
+    desc: 添加新能源牌车-进出场缴费一次
+    send_data:
+      carCode: 新能源
+      carType: 新能源
+    except:
+      resultStatus: True
+
+- test:
+    name: test_add_flightCarNum_and_pay
+    desc: 添加民航车-进出场缴费一次
+    send_data:
+      carCode: 民航
+      carType: 民航
+    except:
+      resultStatus: True
