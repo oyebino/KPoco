@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @File  : test_dec.py
-# @Author: 岑苏岸
+# @Author:
 # @Date  : 2018/12/20
 # @Desc  :
 

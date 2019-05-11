@@ -11,6 +11,7 @@ import allure
 from Config.Config import Config
 from common.baseCommon import getFunName
 
+@allure.feature("微信支付案例")
 class TestPayChargesWeiXin(unittest.TestCase):
 	"""微信支付案例"""
 
@@ -24,6 +25,9 @@ class TestPayChargesWeiXin(unittest.TestCase):
 	@getFunName
 	@allure.story("付费离场(微信支付)")
 	def test_payleave_weixin(self):
+		"""
+		用例描述：付费离场(微信支付)
+		"""
 		A = ApiCase(carNum = Config().common_carNum)
 		A.car_run_inside()
 		self.P.pay_charges(Config().common_carNum)
@@ -35,6 +39,9 @@ class TestPayChargesWeiXin(unittest.TestCase):
 	@getFunName
 	@allure.story("代缴停车费")
 	def test_pay_another(self):
+		"""
+		用例描述：代缴停车费
+		"""
 		A = ApiCase(carNum=self.carCode)
 		A.car_run_inside()
 		result = self.P.pay_with_another(self.carCode)

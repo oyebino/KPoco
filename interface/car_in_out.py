@@ -364,7 +364,7 @@ class ApiCase(object):
 
 
 if __name__ == '__main__':
-    a = ApiCase(carNum = "粤A99999")
-    # a.car_run_inside()
+    a = ApiCase(carNum = "粤A99888")
+    a.car_run_inside()
     # a.pay_charge()
-    a.car_run_outside()
+    # a.car_run_outside()

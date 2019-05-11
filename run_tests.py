@@ -24,7 +24,7 @@ from common.Shell import Shell
 
 from common.logger import logger as log
 
-test_dir = './test_case/PayChargeslist/test_setting.py'
+test_dir = './test_case/PayChargeslist/'
 
 if __name__ == "__main__":
 
@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     # 针对本地执行时，把allure的结果文件清空，在jenkins执行不需要
     delAllureCmd = 'del /s /f /q allure-results'
-    # shell.invoke(delAllureCmd)
+    shell.invoke(delAllureCmd)
 
     pytest.main(args)
 

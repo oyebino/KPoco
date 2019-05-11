@@ -1,19 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="2" name="pytest" skips="0" tests="38" time="2982.993"><testcase classname="test_case.PayChargeslist.test_add_carNumType.TestAddTypeCarNum" file="common\baseCommon.py" line="15" name="test_add_blackCarNum_and_pay" time="107.61515522003174"></testcase><testcase classname="test_case.PayChargeslist.test_add_carNumType.TestAddTypeCarNum" file="common\baseCommon.py" line="15" name="test_add_flightCarNum_and_pay" time="100.53274989128113"></testcase><testcase classname="test_case.PayChargeslist.test_add_carNumType.TestAddTypeCarNum" file="common\baseCommon.py" line="15" name="test_add_greenCarNum_and_pay" time="108.32719588279724"></testcase><testcase classname="test_case.PayChargeslist.test_add_carNumType.TestAddTypeCarNum" file="common\baseCommon.py" line="15" name="test_add_whiteCarNum_and_pay" time="107.30413746833801"></testcase><testcase classname="test_case.PayChargeslist.test_add_carNumType.TestAddTypeCarNum" file="common\baseCommon.py" line="15" name="test_add_yellowCarNum_and_pay" time="106.44108819961548"></testcase><testcase classname="test_case.PayChargeslist.test_buyMonthTicket.TestMonthTicket" file="common\baseCommon.py" line="15" name="test_buy_monthTicket" time="50.16386938095093"></testcase><testcase classname="test_case.PayChargeslist.test_buyMonthTicket.TestMonthTicket" file="common\baseCommon.py" line="15" name="test_monthTicket_detail" time="23.275331497192383"></testcase><testcase classname="test_case.PayChargeslist.test_buyMonthTicket.TestMonthTicket" file="common\baseCommon.py" line="15" name="test_mothTicket_renew" time="33.08789253234863"></testcase><testcase classname="test_case.PayChargeslist.test_buyMonthTicket.TestMonthTicket" file="common\baseCommon.py" line="15" name="test_visitor_authorization_forever" time="64.05966377258301"></testcase><testcase classname="test_case.PayChargeslist.test_buyMonthTicket.TestMonthTicket" file="common\baseCommon.py" line="15" name="test_visitor_authorization_once" time="68.64792656898499"></testcase><testcase classname="test_case.PayChargeslist.test_charges.TestPayChargeslist" file="common\baseCommon.py" line="15" name="test_add_and_del_carNum" time="71.6590986251831"></testcase><testcase classname="test_case.PayChargeslist.test_charges.TestPayChargeslist" file="common\baseCommon.py" line="15" name="test_lock_and_unlock" time="44.18052673339844"></testcase><testcase classname="test_case.PayChargeslist.test_charges.TestPayChargeslist" file="common\baseCommon.py" line="15" name="test_payleave_account" time="34.13795256614685"></testcase><testcase classname="test_case.PayChargeslist.test_charges.TestPayChargeslist" file="common\baseCommon.py" line="15" name="test_setting_often_carNum" time="108.76122069358826"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_businessCoupon_noPaycharge" time="128.18133163452148"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_businessCoupon_payCharge" time="120.02386498451233"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_business_discount" time="125.8381974697113"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_business_fixed" time="122.90202951431274"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_business_free" time="119.99986362457275"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_business_time" time="121.8519697189331"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_commonConpon_noPayCharge" time="116.18564558029175"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_commonConpon_payCharge" time="128.23633480072021"><failure message="TypeError: __init__() missing 2 required positional arguments: &apos;action&apos; and &apos;poco_obj_proxy&apos;">self = &lt;Pages.payCharges_page.ChargesPage object at 0x000000000BCF45C0&gt;
-obj = UIObjectProxy of &quot;.*成功&quot;, timeout = 20
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="3" name="pytest" skips="0" tests="38" time="3267.296"><testcase classname="test_case.PayChargeslist.test_add_carNumType.TestAddTypeCarNum" file="common\baseCommon.py" line="15" name="test_add_blackCarNum_and_pay" time="117.29470872879028"></testcase><testcase classname="test_case.PayChargeslist.test_add_carNumType.TestAddTypeCarNum" file="common\baseCommon.py" line="15" name="test_add_flightCarNum_and_pay" time="108.66521501541138"></testcase><testcase classname="test_case.PayChargeslist.test_add_carNumType.TestAddTypeCarNum" file="common\baseCommon.py" line="15" name="test_add_greenCarNum_and_pay" time="119.29582333564758"></testcase><testcase classname="test_case.PayChargeslist.test_add_carNumType.TestAddTypeCarNum" file="common\baseCommon.py" line="15" name="test_add_whiteCarNum_and_pay" time="114.71356129646301"></testcase><testcase classname="test_case.PayChargeslist.test_add_carNumType.TestAddTypeCarNum" file="common\baseCommon.py" line="15" name="test_add_yellowCarNum_and_pay" time="117.32771062850952"></testcase><testcase classname="test_case.PayChargeslist.test_buyMonthTicket.TestMonthTicket" file="common\baseCommon.py" line="15" name="test_buy_monthTicket" time="70.34202337265015"></testcase><testcase classname="test_case.PayChargeslist.test_buyMonthTicket.TestMonthTicket" file="common\baseCommon.py" line="15" name="test_monthTicket_detail" time="27.283560752868652"></testcase><testcase classname="test_case.PayChargeslist.test_buyMonthTicket.TestMonthTicket" file="common\baseCommon.py" line="15" name="test_mothTicket_renew" time="41.89739632606506"></testcase><testcase classname="test_case.PayChargeslist.test_buyMonthTicket.TestMonthTicket" file="common\baseCommon.py" line="15" name="test_visitor_authorization_forever" time="80.67361402511597"></testcase><testcase classname="test_case.PayChargeslist.test_buyMonthTicket.TestMonthTicket" file="common\baseCommon.py" line="15" name="test_visitor_authorization_once" time="86.6309552192688"></testcase><testcase classname="test_case.PayChargeslist.test_charges.TestPayChargeslist" file="common\baseCommon.py" line="15" name="test_add_and_del_carNum" time="78.73150324821472"></testcase><testcase classname="test_case.PayChargeslist.test_charges.TestPayChargeslist" file="common\baseCommon.py" line="15" name="test_lock_and_unlock" time="44.95457124710083"></testcase><testcase classname="test_case.PayChargeslist.test_charges.TestPayChargeslist" file="common\baseCommon.py" line="15" name="test_payleave_account" time="30.786760807037354"></testcase><testcase classname="test_case.PayChargeslist.test_charges.TestPayChargeslist" file="common\baseCommon.py" line="15" name="test_setting_often_carNum" time="123.03803730010986"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_businessCoupon_noPaycharge" time="143.5002076625824"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_businessCoupon_payCharge" time="137.81688284873962"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_business_discount" time="135.524751663208"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_business_fixed" time="134.57969760894775"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_business_free" time="136.9268319606781"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_business_time" time="134.37768602371216"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_commonConpon_noPayCharge" time="131.81653952598572"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_commonConpon_payCharge" time="127.78130865097046"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_parkCoupon_noPayCharge" time="116.85368371009827"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_parkCoupon_payCharge" time="117.05669522285461"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_scoreCoupon_noPayCharge" time="119.776850938797"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_scoreCoupon_payCharge" time="114.26953601837158"><failure message="AssertionError">args = (&lt;test_chargesCoupon.TestChargesCoupon testMethod=test_scoreCoupon_payCharge&gt;,)
+kwargs = {}
 
-    def wait(self,obj,timeout = 20):
+    def wrapper(*args, **kwargs):
+    	common.ParamConstant.screenshotPath = root_path + &quot;/result/screenshot/&quot; + func.__name__ + &quot;/&quot;
+    	if os.path.exists(common.ParamConstant.screenshotPath):
+    		delete_file(common.ParamConstant.screenshotPath)
+&gt;   	return func(*args, **kwargs)
+
+common\baseCommon.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_case\PayChargeslist\test_chargesCoupon.py:136: in test_scoreCoupon_payCharge
+    self.A.submit_pay()
+Pages\payCharges_page.py:209: in submit_pay
+    self.check_amount()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;Pages.payCharges_page.ChargesPage object at 0x000000000B68CF98&gt;
+
+    def check_amount(self):
+    	&quot;&quot;&quot;检查金额比对&quot;&quot;&quot;
+    	check_money = float(self.poco(nameMatches=&quot;¥.*&quot;).get_name()[1:])
+    	if self.poco(nameMatches=&quot;¥ .*&quot;).exists():
+    		pay_money = float(self.poco(nameMatches=&quot;¥ .*&quot;).get_name()[2:])
+    	else:
+    		pay_money = float(self.poco(nameMatches=&quot;需支付.*&quot;).get_name()[5:])
+    	discount_money = 0
+    	if self.poco(nameMatches=&quot;-¥.*&quot;).exists():
+    		discountPocos = self.poco(nameMatches=&quot;-¥.*&quot;)
+    		for pocoName in discountPocos:
+    			value = float(pocoName.get_name()[2:])
+    			discount_money = discount_money + value
+    	if self.cal_amount(check_money, pay_money,discount_money):
+    		self.log.info(&quot;需付金额【{}】 = 查询金额【{}】- 优惠金额【{}】&quot;.format(pay_money,check_money,discount_money))
+    		pay_charges = True
+    	else:
+    		self.log.error(&quot;需付金额【{}】!=查询金额【{}】- 优惠金额【{}】&quot;.format(pay_money,check_money,discount_money))
+    		pay_charges = False
+&gt;   	assert pay_charges == True
+E    AssertionError
+
+Pages\payCharges_page.py:203: AssertionError</failure></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_use_all_coupon_PayCharge" time="118.30976700782776"><failure message="TypeError: __init__() missing 2 required positional arguments: &apos;action&apos; and &apos;poco_obj_proxy&apos;">self = &lt;Pages.payCharges_page.ChargesPage object at 0x000000000B68CF98&gt;
+obj = UIObjectProxy of &quot;付费离场&quot;
+
+    def click(self,obj):
         &quot;&quot;&quot;
-        等待poco对象出现
-        :param obj:
+        点击
+        :param obj: poco对象
         :return:
         &quot;&quot;&quot;
         try:
-&gt;           obj.wait_for_appearance(timeout=timeout)
+&gt;           obj.wait_for_appearance(timeout=20)
 
-Pages\poco_base.py:171: 
+Pages\poco_base.py:34: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-self = UIObjectProxy of &quot;.*成功&quot;, timeout = 20
+self = UIObjectProxy of &quot;付费离场&quot;, timeout = 20
 
     def wait_for_appearance(self, timeout=120):
         &quot;&quot;&quot;
@@ -32,168 +73,9 @@ self = UIObjectProxy of &quot;.*成功&quot;, timeout = 20
             self.poco.sleep_for_polling_interval()
             if time.time() - start &gt; timeout:
 &gt;               raise PocoTargetTimeout(&apos;appearance&apos;, self)
-E               poco.exceptions.PocoTargetTimeout: Waiting timeout for appearance of &quot;UIObjectProxy of &quot;.*成功&quot;&quot;
+E               poco.exceptions.PocoTargetTimeout: Waiting timeout for appearance of &quot;UIObjectProxy of &quot;付费离场&quot;&quot;
 
 D:\Python35\lib\site-packages\poco\proxy.py:631: PocoTargetTimeout
-
-During handling of the above exception, another exception occurred:
-
-args = (&lt;test_chargesCoupon.TestChargesCoupon testMethod=test_commonConpon_payCharge&gt;,)
-kwargs = {}
-
-    def wrapper(*args, **kwargs):
-    	common.ParamConstant.screenshotPath = root_path + &quot;/result/screenshot/&quot; + func.__name__ + &quot;/&quot;
-    	if os.path.exists(common.ParamConstant.screenshotPath):
-    		delete_file(common.ParamConstant.screenshotPath)
-&gt;   	return func(*args, **kwargs)
-
-common\baseCommon.py:20: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-test_case\PayChargeslist\test_chargesCoupon.py:99: in test_commonConpon_payCharge
-    self.A.submit_pay()
-Pages\payCharges_page.py:212: in submit_pay
-    self.wait(self.poco(nameMatches =&quot;.*成功&quot;))
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
-self = &lt;Pages.payCharges_page.ChargesPage object at 0x000000000BCF45C0&gt;
-obj = UIObjectProxy of &quot;.*成功&quot;, timeout = 20
-
-    def wait(self,obj,timeout = 20):
-        &quot;&quot;&quot;
-        等待poco对象出现
-        :param obj:
-        :return:
-        &quot;&quot;&quot;
-        try:
-            obj.wait_for_appearance(timeout=timeout)
-            # self.log.info(str(obj)[17:] + &quot;已出现&quot;)
-        except PocoTargetTimeout:
-            self.log.error(str(obj)[17:] + &quot;没有出现&quot;)
-&gt;           raise PocoTargetTimeout
-E           TypeError: __init__() missing 2 required positional arguments: &apos;action&apos; and &apos;poco_obj_proxy&apos;
-
-Pages\poco_base.py:175: TypeError</failure></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_parkCoupon_noPayCharge" time="113.44248867034912"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_parkCoupon_payCharge" time="107.92517280578613"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_scoreCoupon_noPayCharge" time="103.37891268730164"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_scoreCoupon_payCharge" time="107.82816743850708"></testcase><testcase classname="test_case.PayChargeslist.test_chargesCoupon.TestChargesCoupon" file="common\baseCommon.py" line="15" name="test_use_all_coupon_PayCharge" time="151.9746925830841"><failure message="TypeError: __init__() missing 1 required positional argument: &apos;value&apos;">self = &lt;Pages.payCoupon_page.PayCouponPage object at 0x000000000BD191D0&gt;
-v = Template(E:\KPoco\Pages\img\停车场积分抵扣金额开关.png)
-
-    def touch(self,v):
-        &quot;&quot;&quot;
-        识别图片进行点击
-        :param v:
-        :return:
-        &quot;&quot;&quot;
-        try:
-&gt;           wait(v)
-
-Pages\poco_base.py:79: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
-args = (Template(E:\KPoco\Pages\img\停车场积分抵扣金额开关.png),), kwargs = {}
-start = 1552979952.4626837
-m = {&apos;interval&apos;: 0.5, &apos;intervalfunc&apos;: None, &apos;timeout&apos;: None, &apos;v&apos;: Template(E:\KPoco\Pages\img\停车场积分抵扣金额开关.png)}
-fndata = {&apos;call_args&apos;: {&apos;interval&apos;: 0.5, &apos;intervalfunc&apos;: None, &apos;timeout&apos;: None, &apos;v&apos;: Template(E:\KPoco\Pages\img\停车场积分抵扣金额开关.png)}, &apos;end_time&apos;: 1552979983.5154598, &apos;name&apos;: &apos;wait&apos;, &apos;start_time&apos;: 1552979952.4626837, ...}
-data = {&apos;end_time&apos;: 1552979983.5154598, &apos;traceback&apos;: &apos;Traceback (most recent call last):\n  File &quot;D:\\Python35\\lib\\site-pac...error.TargetNotFoundError: \&apos;Picture Template(E:\\\\KPoco\\\\Pages\\\\img\\\\停车场积分抵扣金额开关.png) not found in screen\&apos;\n&apos;}
-
-    @functools.wraps(f)
-    def wrapper(*args, **kwargs):
-        start = time.time()
-        m = inspect.getcallargs(f, *args, **kwargs)
-        fndata = {&apos;name&apos;: f.__name__, &apos;call_args&apos;: m, &apos;start_time&apos;: start}
-        logger.running_stack.append(fndata)
-        try:
-&gt;           res = f(*args, **kwargs)
-
-D:\Python35\lib\site-packages\airtest\utils\logwraper.py:72: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
-v = Template(E:\KPoco\Pages\img\停车场积分抵扣金额开关.png), timeout = 30, interval = 0.5
-intervalfunc = None
-
-    @logwrap
-    def wait(v, timeout=None, interval=0.5, intervalfunc=None):
-        &quot;&quot;&quot;
-        Wait to match the Template on the device screen
-    
-        :param v: target object to wait for, Template instance
-        :param timeout: time interval to wait for the match, default is None which is ``ST.FIND_TIMEOUT``
-        :param interval: time interval in seconds to attempt to find a match
-        :param intervalfunc: called after each unsuccessful attempt to find the corresponding match
-        :raise TargetNotFoundError: raised if target is not found after the time limit expired
-        :return: coordinates of the matched target
-        :platforms: Android, Windows, iOS
-        &quot;&quot;&quot;
-        timeout = timeout or ST.FIND_TIMEOUT
-&gt;       pos = loop_find(v, timeout=timeout, interval=interval, intervalfunc=intervalfunc)
-
-D:\Python35\lib\site-packages\airtest\core\api.py:394: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
-args = (Template(E:\KPoco\Pages\img\停车场积分抵扣金额开关.png),)
-kwargs = {&apos;interval&apos;: 0.5, &apos;intervalfunc&apos;: None, &apos;timeout&apos;: 30}
-start = 1552979952.4626837
-m = {&apos;interval&apos;: 0.5, &apos;intervalfunc&apos;: None, &apos;query&apos;: Template(E:\KPoco\Pages\img\停车场积分抵扣金额开关.png), &apos;threshold&apos;: None, ...}
-fndata = {&apos;call_args&apos;: {&apos;interval&apos;: 0.5, &apos;intervalfunc&apos;: None, &apos;query&apos;: Template(E:\KPoco\Pages\img\停车场积分抵扣金额开关.png), &apos;threshold&apos;: None, ...}, &apos;end_time&apos;: 1552979983.5144596, &apos;name&apos;: &apos;loop_find&apos;, &apos;start_time&apos;: 1552979952.4626837, ...}
-data = {&apos;end_time&apos;: 1552979983.5144596, &apos;traceback&apos;: &apos;Traceback (most recent call last):\n  File &quot;D:\\Python35\\lib\\site-pac...error.TargetNotFoundError: \&apos;Picture Template(E:\\\\KPoco\\\\Pages\\\\img\\\\停车场积分抵扣金额开关.png) not found in screen\&apos;\n&apos;}
-
-    @functools.wraps(f)
-    def wrapper(*args, **kwargs):
-        start = time.time()
-        m = inspect.getcallargs(f, *args, **kwargs)
-        fndata = {&apos;name&apos;: f.__name__, &apos;call_args&apos;: m, &apos;start_time&apos;: start}
-        logger.running_stack.append(fndata)
-        try:
-&gt;           res = f(*args, **kwargs)
-
-D:\Python35\lib\site-packages\airtest\utils\logwraper.py:72: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
-query = Template(E:\KPoco\Pages\img\停车场积分抵扣金额开关.png), timeout = 30
-threshold = None, interval = 0.5, intervalfunc = None
-
-    @logwrap
-    def loop_find(query, timeout=ST.FIND_TIMEOUT, threshold=None, interval=0.5, intervalfunc=None):
-        &quot;&quot;&quot;
-        Search for image template in the screen until timeout
-    
-        Args:
-            query: image template to be found in screenshot
-            timeout: time interval how long to look for the image template
-            threshold: default is None
-            interval: sleep interval before next attempt to find the image template
-            intervalfunc: function that is executed after unsuccessful attempt to find the image template
-    
-        Raises:
-            TargetNotFoundError: when image template is not found in screenshot
-    
-        Returns:
-            TargetNotFoundError if image template not found, otherwise returns the position where the image template has
-            been found in screenshot
-    
-        &quot;&quot;&quot;
-        G.LOGGING.info(&quot;Try finding:\n%s&quot;, query)
-        start_time = time.time()
-        while True:
-            screen = G.DEVICE.snapshot(filename=None)
-    
-            if screen is None:
-                G.LOGGING.warning(&quot;Screen is None, may be locked&quot;)
-            else:
-                if threshold:
-                    query.threshold = threshold
-                match_pos = query.match_in(screen)
-                if match_pos:
-                    try_log_screen(screen)
-                    return match_pos
-    
-            if intervalfunc is not None:
-                intervalfunc()
-    
-            # 超时则raise，未超时则进行下次循环:
-            if (time.time() - start_time) &gt; timeout:
-                try_log_screen(screen)
-&gt;               raise TargetNotFoundError(&apos;Picture %s not found in screen&apos; % query)
-E               airtest.core.error.TargetNotFoundError: &apos;Picture Template(E:\\KPoco\\Pages\\img\\停车场积分抵扣金额开关.png) not found in screen&apos;
-
-D:\Python35\lib\site-packages\airtest\core\cv.py:60: TargetNotFoundError
 
 During handling of the above exception, another exception occurred:
 
@@ -208,28 +90,65 @@ kwargs = {}
 
 common\baseCommon.py:20: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-test_case\PayChargeslist\test_chargesCoupon.py:157: in test_use_all_coupon_PayCharge
-    self.P.use_scoreCoupon(isall=False)
-Pages\payCoupon_page.py:22: in use_scoreCoupon
-    self.touch(Template(BASE_DIR + r&quot;\img\停车场积分抵扣金额开关.png&quot;, threshold=0.7, target_pos=5, rgb=False, record_pos=(0.321, -0.199),resolution=(1080, 1920)))
+test_case\PayChargeslist\test_chargesCoupon.py:153: in test_use_all_coupon_PayCharge
+    self.A.pay_charges(self.carNum)
+Pages\payCharges_page.py:175: in pay_charges
+    self.click(self.poco(&quot;付费离场&quot;))
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-self = &lt;Pages.payCoupon_page.PayCouponPage object at 0x000000000BD191D0&gt;
-v = Template(E:\KPoco\Pages\img\停车场积分抵扣金额开关.png)
+self = &lt;Pages.payCharges_page.ChargesPage object at 0x000000000B68CF98&gt;
+obj = UIObjectProxy of &quot;付费离场&quot;
 
-    def touch(self,v):
+    def click(self,obj):
         &quot;&quot;&quot;
-        识别图片进行点击
-        :param v:
+        点击
+        :param obj: poco对象
         :return:
         &quot;&quot;&quot;
         try:
-            wait(v)
-            touch(v)
-            self.log.info(str(v)+ &quot;点击成功&quot;)
-        except TargetNotFoundError:
-            self.log.error(str(v)+ &quot;没有找到&quot;)
-&gt;           raise TargetNotFoundError
-E           TypeError: __init__() missing 1 required positional argument: &apos;value&apos;
+            obj.wait_for_appearance(timeout=20)
+            obj.click()
+            self.web_loading()
+            self.log.info(str(obj)[17:] + &quot;点击成功&quot;)
+        except PocoTargetTimeout:
+            self.log.error(str(obj)[17:] + &quot;没有显示&quot;)
+&gt;           raise PocoTargetTimeout
+E           TypeError: __init__() missing 2 required positional arguments: &apos;action&apos; and &apos;poco_obj_proxy&apos;
 
-Pages\poco_base.py:84: TypeError</failure></testcase><testcase classname="test_case.PayChargeslist.test_payCharges_weixin.TestPayChargesWeiXin" file="common\baseCommon.py" line="15" name="test_pay_another" time="77.43042850494385"></testcase><testcase classname="test_case.PayChargeslist.test_payCharges_weixin.TestPayChargesWeiXin" file="common\baseCommon.py" line="15" name="test_payleave_weixin" time="40.93134117126465"></testcase><testcase classname="test_case.PayChargeslist.test_setting.TestSetting" file="common\baseCommon.py" line="15" name="test_setting_allow_check_other_aopen" time="27.02154541015625"></testcase><testcase classname="test_case.PayChargeslist.test_setting.TestSetting" file="common\baseCommon.py" line="15" name="test_setting_allow_check_other_close" time="23.691355228424072"></testcase><testcase classname="test_case.PayChargeslist.test_setting.TestSetting" file="common\baseCommon.py" line="15" name="test_setting_message_remind_aopen" time="23.34033489227295"></testcase><testcase classname="test_case.PayChargeslist.test_setting.TestSetting" file="common\baseCommon.py" line="15" name="test_setting_message_remind_close" time="23.631351470947266"></testcase><testcase classname="test_case.PayChargeslist.test_uncertified_carNum.TestUncertifiedCarNum" file="common\baseCommon.py" line="15" name="test_Uncertified_amonthTicketDetail_authorize_warn" time="80.36259651184082"></testcase><testcase classname="test_case.PayChargeslist.test_uncertified_carNum.TestUncertifiedCarNum" file="common\baseCommon.py" line="15" name="test_Uncertified_carNum_warn" time="13.244757413864136"></testcase><testcase classname="test_case.PayChargeslist.test_uncertified_carNum.TestUncertifiedCarNum" file="common\baseCommon.py" line="15" name="test_Uncertified_carPicture_warn" time="17.66701054573059"></testcase><testcase classname="test_case.PayChargeslist.test_uncertified_carNum.TestUncertifiedCarNum" file="common\baseCommon.py" line="15" name="test_Uncertified_lock_warn" time="17.429996728897095"></testcase><testcase classname="test_case.PayChargeslist.test_uncertified_carNum.TestUncertifiedCarNum" file="common\baseCommon.py" line="15" name="test_Uncertified_parkingName" time="39.27824640274048"></testcase></testsuite>
+Pages\poco_base.py:40: TypeError</failure></testcase><testcase classname="test_case.PayChargeslist.test_payCharges_weixin.TestPayChargesWeiXin" file="common\baseCommon.py" line="15" name="test_pay_another" time="85.83790993690491"></testcase><testcase classname="test_case.PayChargeslist.test_payCharges_weixin.TestPayChargesWeiXin" file="common\baseCommon.py" line="15" name="test_payleave_weixin" time="39.910282611846924"></testcase><testcase classname="test_case.PayChargeslist.test_setting.TestSetting" file="common\baseCommon.py" line="15" name="test_setting_allow_check_other_aopen" time="34.51497411727905"></testcase><testcase classname="test_case.PayChargeslist.test_setting.TestSetting" file="common\baseCommon.py" line="15" name="test_setting_allow_check_other_close" time="32.96888566017151"></testcase><testcase classname="test_case.PayChargeslist.test_setting.TestSetting" file="common\baseCommon.py" line="15" name="test_setting_message_remind_aopen" time="31.300790309906006"></testcase><testcase classname="test_case.PayChargeslist.test_setting.TestSetting" file="common\baseCommon.py" line="15" name="test_setting_message_remind_close" time="32.83087778091431"></testcase><testcase classname="test_case.PayChargeslist.test_uncertified_carNum.TestUncertifiedCarNum" file="common\baseCommon.py" line="15" name="test_Uncertified_amonthTicketDetail_authorize_warn" time="89.8951416015625"></testcase><testcase classname="test_case.PayChargeslist.test_uncertified_carNum.TestUncertifiedCarNum" file="common\baseCommon.py" line="15" name="test_Uncertified_carNum_warn" time="13.149752140045166"></testcase><testcase classname="test_case.PayChargeslist.test_uncertified_carNum.TestUncertifiedCarNum" file="common\baseCommon.py" line="15" name="test_Uncertified_carPicture_warn" time="8.563489437103271"><failure message="poco.exceptions.PocoNoSuchNodeException: Cannot find any visible node by query UIObjectProxy of &quot;粤B·46032 &quot;">args = (&lt;test_uncertified_carNum.TestUncertifiedCarNum testMethod=test_Uncertified_carPicture_warn&gt;,)
+kwargs = {}
+
+    def wrapper(*args, **kwargs):
+    	common.ParamConstant.screenshotPath = root_path + &quot;/result/screenshot/&quot; + func.__name__ + &quot;/&quot;
+    	if os.path.exists(common.ParamConstant.screenshotPath):
+    		delete_file(common.ParamConstant.screenshotPath)
+&gt;   	return func(*args, **kwargs)
+
+common\baseCommon.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_case\PayChargeslist\test_uncertified_carNum.py:41: in test_Uncertified_carPicture_warn
+    result = self.U.find_uncertified_carPicture_warn()
+Pages\uncertifiedCarnum_page.py:28: in find_uncertified_carPicture_warn
+    return self.get_pocoValue(&quot;查看进场图片需要行驶证认证&quot;,&quot;进场图片&quot;)
+Pages\uncertifiedCarnum_page.py:58: in get_pocoValue
+    self.P.choose_carCode(self.carNum)
+Pages\payCharges_page.py:47: in choose_carCode
+    pox =self.poco(carCode).get_position()
+D:\Python35\lib\site-packages\poco\proxy.py:563: in get_position
+    pos = self.attr(&apos;pos&apos;)
+D:\Python35\lib\site-packages\poco\proxy.py:39: in wrapped
+    return func(self, *args, **kwargs)
+D:\Python35\lib\site-packages\poco\proxy.py:684: in attr
+    nodes = self._do_query(multiple=False)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = UIObjectProxy of &quot;粤B·46032 &quot;, multiple = False, refresh = False
+
+    def _do_query(self, multiple=True, refresh=False):
+        if not self._evaluated or refresh:
+            self._nodes = self.poco.agent.hierarchy.select(self.query, multiple)
+            if len(self._nodes) == 0:
+&gt;               raise PocoNoSuchNodeException(self)
+E               poco.exceptions.PocoNoSuchNodeException: Cannot find any visible node by query UIObjectProxy of &quot;粤B·46032 &quot;
+
+D:\Python35\lib\site-packages\poco\proxy.py:821: PocoNoSuchNodeException</failure></testcase><testcase classname="test_case.PayChargeslist.test_uncertified_carNum.TestUncertifiedCarNum" file="common\baseCommon.py" line="15" name="test_Uncertified_lock_warn" time="20.533174514770508"></testcase><testcase classname="test_case.PayChargeslist.test_uncertified_carNum.TestUncertifiedCarNum" file="common\baseCommon.py" line="15" name="test_Uncertified_parkingName" time="44.09652233123779"></testcase></testsuite>

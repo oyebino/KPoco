@@ -12,6 +12,7 @@ import unittest
 import allure
 from common.baseCommon import getFunName
 
+@allure.feature("未认证车辆")
 class TestUncertifiedCarNum(unittest.TestCase):
 	"""未认证车辆"""
 	@classmethod
@@ -32,29 +33,44 @@ class TestUncertifiedCarNum(unittest.TestCase):
 	@getFunName
 	@allure.story("认证车牌--车牌下方有验证提醒")
 	def test_Uncertified_carNum_warn(self):
+		"""
+		用例描述：认证车牌--车牌下方有验证提醒
+		"""
 		result = self.U.find_uncertified_warm()
 		assert "车辆未认证" in result
 
 	@getFunName
 	@allure.story("认证车牌--点击进场图片会弹出要提示认证的提醒")
 	def test_Uncertified_carPicture_warn(self):
+		"""
+		用例描述：认证车牌--点击进场图片会弹出要提示认证的提醒
+		"""
 		result = self.U.find_uncertified_carPicture_warn()
 		assert "查看进场图片需要行驶证认证" == result
 
 	@getFunName
 	@allure.story("未认证车牌--点击上锁会弹出要认证提醒")
 	def test_Uncertified_lock_warn(self):
+		"""
+		用例描述：未认证车牌--点击上锁会弹出要认证提醒
+		"""
 		result = self.U.find_uncertified_lock_warn()
 		assert "锁车需要行驶证认证" == result
 
 	@getFunName
 	@allure.story("未认证车牌--进场的车辆停车场会显示为***停车场")
 	def test_Uncertified_parkingName(self):
+		"""
+		用例描述：未认证车牌--进场的车辆停车场会显示为***停车场
+		"""
 		result = self.U.find_uncertified_parkingName()
 		assert "***停车场" == result
 
 	@getFunName
 	@allure.story("未认证车牌--点击月票详情会弹出要认证提醒")
 	def test_Uncertified_amonthTicketDetail_authorize_warn(self):
+		"""
+		用例描述：未认证车牌--点击月票详情会弹出要认证提醒
+		"""
 		result = self.U.Uncertified_monthTicketDetail_authorize_warn(self.carNum)
 		assert "访客授权需行驶证认证" == result

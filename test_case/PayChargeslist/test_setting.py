@@ -9,7 +9,7 @@ import unittest
 import allure
 from common.baseCommon import getFunName
 
-
+@allure.feature("设置模块")
 class TestSetting(unittest.TestCase):
 
 	@classmethod
@@ -23,24 +23,36 @@ class TestSetting(unittest.TestCase):
 	@allure.story("设置开启信息提醒功能")
 	@getFunName
 	def test_setting_message_remind_aopen(self):
+		"""
+		用例描述：设置开启信息提醒功能
+		"""
 		result = self.S.set_message_remind_open()
 		assert result == True
 
 	@getFunName
 	@allure.story("设置关闭信息提醒功能")
 	def test_setting_message_remind_close(self):
+		"""
+		用例描述：设置关闭信息提醒功能
+		"""
 		result = self.S.set_message_remind_close()
 		assert result == True
 
 	@getFunName
 	@allure.story("设置开启允许他人查询功能")
 	def test_setting_allow_check_other_aopen(self):
+		"""
+		用例描述：设置开启允许他人查询功能
+		"""
 		result = self.S.set_allow_check_other_open()
 		assert result == True
 
 	@getFunName
 	@allure.story("设置关闭允许他人查询功能")
 	def test_setting_allow_check_other_close(self):
+		"""
+		用例描述：设置关闭允许他人查询功能
+		"""
 		result = self.S.set_allow_check_other_close()
 		assert result == True
 

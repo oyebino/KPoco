@@ -64,6 +64,7 @@ class PocoBase():
         try:
             wait(v)
             swipe(v,vector = vector)
+            self.web_loading()
             self.log.info(str(v) + "向" + str(vector) + "滑动成功")
         except TargetNotFoundError:
             self.log.error(str(v) + "没有找到")
@@ -78,6 +79,8 @@ class PocoBase():
         try:
             wait(v)
             touch(v)
+            sleep(1)
+            self.web_loading()
             self.log.info(str(v)+ "点击成功")
         except TargetNotFoundError:
             self.log.error(str(v)+ "没有找到")
@@ -190,10 +193,10 @@ class PocoBase():
 
     def web_loading(self):
         """等待加载"""
-        sleep(0.2)
+        sleep(0.5)
         for num in range(0, 30):
             if self.poco("数据加载中").exists():
-                sleep(0.1)
+                sleep(1)
             else:
-                sleep(0.2)
+                sleep(2)
                 break

@@ -14,8 +14,8 @@ from interface.aomp import commonConpon
 import allure
 from common.baseCommon import getFunName
 
+@allure.feature("费用优惠模块")
 class TestChargesCoupon(unittest.TestCase):
-	"""费用优惠模块"""
 	@classmethod
 	def setUpClass(cls):
 		cls.A = ChargesPage()
@@ -39,6 +39,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("商家券优惠-需余额缴费")
 	def test_businessCoupon_payCharge(self):
+		"""
+		用例描述：商家券优惠-需余额缴费
+		"""
 		werXin().send_Business_coupon("UI一点停专用金额扣减0.01",self.carNum)
 		self.A.pay_charges(self.carNum)
 		result =self.P.use_businessCoupon("UI一点停专用金额扣减0.01")
@@ -48,6 +51,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("商家金额优惠-不用缴费")
 	def test_businessCoupon_noPaycharge(self):
+		"""
+		用例描述：商家金额优惠-不用缴费
+		"""
 		werXin().send_Business_coupon("UI一点停专用金额扣减25", self.carNum)
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_businessCoupon("UI一点停专用金额扣减25")
@@ -57,6 +63,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("商家券折扣6折-需余额缴费")
 	def test_business_discount(self):
+		"""
+		用例描述：商家券折扣6折-需余额缴费
+		"""
 		werXin().send_Business_coupon("UI一点停专用折扣6折", self.carNum)
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_businessCoupon("UI一点停专用折扣6折")
@@ -66,6 +75,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("商家免费劵")
 	def test_business_free(self):
+		"""
+		用例描述：商家免费劵
+		"""
 		werXin().send_Business_coupon("UI一点停专用免费劵", self.carNum)
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_businessCoupon("UI一点停专用免费劵")
@@ -75,6 +87,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("商家固定券")
 	def test_business_fixed(self):
+		"""
+		用例描述：商家固定券
+		"""
 		werXin().send_Business_coupon("UI一点停专用固定劵0.22元", self.carNum)
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_businessCoupon("UI一点停专用固定劵0.22元")
@@ -84,6 +99,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("商家时间劵-操作全部时间")
 	def test_business_time(self):
+		"""
+		用例描述：商家时间劵-操作全部时间
+		"""
 		werXin().send_Business_coupon("UI一点停专用抵扣时间券", self.carNum)
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_businessCoupon("UI一点停专用抵扣时间券")
@@ -93,6 +111,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("通用劵-需要缴费")
 	def test_commonConpon_payCharge(self):
+		"""
+		用例描述：通用劵-需要缴费
+		"""
 		commonConpon().send_coupon("UI一点停通用劵")
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_commonConpon("通用劵0.01元")
@@ -102,6 +123,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("通用劵-不用缴费")
 	def test_commonConpon_noPayCharge(self):
+		"""
+		用例描述：通用劵-不用缴费
+		"""
 		commonConpon().send_coupon("UI一点停通用劵25元")
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_commonConpon("通用劵25元")
@@ -111,6 +135,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("线上优惠-需要缴费")
 	def test_parkCoupon_payCharge(self):
+		"""
+		用例描述：线上优惠-需要缴费
+		"""
 		Pomp().park_coupon_manager("线上优惠0.01元","VALID")
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_parkCoupon()
@@ -121,6 +148,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("线上优惠-不用缴费")
 	def test_parkCoupon_noPayCharge(self):
+		"""
+		用例描述：线上优惠-不用缴费
+		"""
 		Pomp().park_coupon_manager("线上优惠25元", "VALID")
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_parkCoupon()
@@ -131,6 +161,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("积分优惠-需余额缴费")
 	def test_scoreCoupon_payCharge(self):
+		"""
+		用例描述：积分优惠-需余额缴费
+		"""
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_scoreCoupon(isall= False)
 		self.A.submit_pay()
@@ -139,6 +172,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("积分优惠-不用缴费")
 	def test_scoreCoupon_noPayCharge(self):
+		"""
+		用例描述：积分优惠-不用缴费
+		"""
 		self.A.pay_charges(self.carNum)
 		result = self.P.use_scoreCoupon(isall= True)
 		self.A.submit_pay()
@@ -147,6 +183,9 @@ class TestChargesCoupon(unittest.TestCase):
 	@getFunName
 	@allure.story("使用四种优惠劵方式")
 	def test_use_all_coupon_PayCharge(self):
+		"""
+		用例描述：使用四种优惠劵方式
+		"""
 		werXin().send_Business_coupon("UI一点停专用金额扣减0.01", self.carNum)
 		commonConpon().send_coupon("UI一点停通用劵")
 		Pomp().park_coupon_manager("线上优惠0.01元", "VALID")

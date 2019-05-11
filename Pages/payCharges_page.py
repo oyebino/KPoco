@@ -207,6 +207,8 @@ class ChargesPage(PocoBase):
 		"""确认支付操作"""
 		if type =="余额":
 			self.check_amount()
+			if not self.poco("确认支付").attr("touchable")== "True":
+				sleep(3)
 			self.click(self.poco("确认支付"))
 			self.web_loading()
 			self.wait(self.poco(nameMatches =".*成功"))
@@ -294,6 +296,8 @@ class ChargesPage(PocoBase):
 		sleep(0.5)
 		for num in range(0,30):
 			if self.poco("数据加载中").exists():
+				sleep(1)
+			if self.poco("正在登录中...").exists():
 				sleep(1)
 			else:
 				sleep(0.5)
