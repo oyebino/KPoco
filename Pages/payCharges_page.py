@@ -183,6 +183,9 @@ class ChargesPage(PocoBase):
 
 	def check_amount(self):
 		"""检查金额比对"""
+		home()
+		start_app(self.PKG)
+		sleep(2)
 		check_money = float(self.poco(nameMatches="¥.*").get_name()[1:])
 		if self.poco(nameMatches="¥ .*").exists():
 			pay_money = float(self.poco(nameMatches="¥ .*").get_name()[2:])
@@ -285,9 +288,18 @@ class ChargesPage(PocoBase):
 		if self.poco("com.tencent.mm:id/j1").exists():
 			self.poco("com.tencent.mm:id/j1").click()
 		else:
-			self.poco("com.tencent.mm:id/jr").click()
+			self.poco("com.tencent.mm:id/kj").click()
 		self.poco(text="刷新").click()
-		self.poco("我").wait_for_appearance(timeout=20)
+		sleep(5)
+		# self.poco("我").wait_for_appearance(timeout=20)
+		for i in range(0,10):
+			sleep(1)
+			for j in ["收费规则","代缴停车费"]:
+				if self.poco(j).exists():
+					break
+			else:
+				continue
+			break
 		self.web_loading()
 		self.log.info("刷新页面成功")
 
@@ -325,7 +337,7 @@ class ChargesPage(PocoBase):
 		return pay_with_another
 
 	def input_carNum(self,carNum):
-		self.poco("一点停").child("android.view.View").child("android.view.View")[0].child("android.view.View").click()
+		self.poco("YDTtest").child("android.view.View").child("android.view.View")[0].child("android.view.View").click()
 		first = carNum[0:1]
 		self.click(self.poco(first))
 		home()

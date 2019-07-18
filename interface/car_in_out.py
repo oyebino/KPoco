@@ -154,7 +154,7 @@ class ApiCase(object):
         if result['biz_content']['msg'] == "ok":
             log.info("【{}】车辆进场成功...".format(self.carNum))
         else:
-	        log.error("【{}】车辆进场失败，原因:{}".format(self.carNum,result['biz_content']['msg']))
+            log.error("【{}】车辆进场失败，原因:{}".format(self.carNum,result['biz_content']['msg']))
 
     """获取中央收费人员的token"""
     def get_center_people_token(self):
@@ -364,7 +364,7 @@ class ApiCase(object):
 
 
 if __name__ == '__main__':
-    a = ApiCase(carNum = "粤A99888")
+    a = ApiCase(carNum = "粤Y99999")
     a.car_run_inside()
     # a.pay_charge()
     # a.car_run_outside()

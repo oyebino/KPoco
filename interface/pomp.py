@@ -84,7 +84,7 @@ class Pomp(object):
 
 class werXin(object):
     """商家劵"""
-    def __init__(self, host= "http://mgr-weixin.k8s.yidianting.com.cn"):
+    def __init__(self, host= "https://ydtw.k8s.yidianting.com.cn"):
         self.host = host
         loginUrl = self.host + "/mgr-weixin/passport/signin.do"
         self.S = requests.session()
@@ -106,6 +106,7 @@ class werXin(object):
             "carCode": "{}".format(carNum),
             "checkExisted": ""
         }
+        print(data)
         result = self.S.post(path,data)
         log.info("微信下发商家劵【{}】到车辆【{}】{}".format(coupon_name,carNum,result.json()['message']))
 
@@ -116,5 +117,5 @@ if __name__ == '__main__':
     # b.refund_monthTicket(carNum="粤A99999")
     # b.park_coupon_manager("线上优惠25元", "FROZE")
     # FROZE     VALID
-    # a.send_Business_coupon("UI一点停专用固定劵0.22元","粤A99999")
+    a.send_Business_coupon("UI一点停专用固定劵0.22元","粤A99999")
     # b.open_monthTicket("粤A99998")

@@ -55,4 +55,3 @@ class TestSetting(unittest.TestCase):
 		"""
 		result = self.S.set_allow_check_other_close()
 		assert result == True
-

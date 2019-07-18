@@ -34,7 +34,8 @@ class commonConpon(object):
         path = self.host + "/coupon/sendCouponS.do"
         data = {
             "couponId": "{}".format(couponId),
-            "chooseArray": "3634"   #用户ID
+            # "chooseArray": "3634"   #用户13531412589 的ID
+            "chooseArray":"5398"    #用户1345081097 的ID
         }
         result = self.S.post(path, data)
         # print(result.json())

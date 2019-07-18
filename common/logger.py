@@ -21,8 +21,8 @@ class LogSignleton(object):
         pass
 
     def __new__(cls, log_config):
-        mutex=threading.Lock()
-        mutex.acquire() # 上锁，防止多线程下出问题
+        # mutex=threading.Lock()
+        # mutex.acquire() # 上锁，防止多线程下出问题
         if not hasattr(cls, 'instance'):
             cls.instance = super(LogSignleton, cls).__new__(cls)
             config = configparser.ConfigParser()
@@ -38,7 +38,7 @@ class LogSignleton(object):
             cls.instance.logfile_log_on = int(config.get('LOGGING', 'logfile_log_on'))
             cls.instance.logger = logging.getLogger(cls.instance.logger_name)
             cls.instance.__config_logger()
-        mutex.release()
+        # mutex.release()
         return cls.instance
 
     def get_logger(self):

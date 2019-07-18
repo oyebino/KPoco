@@ -197,6 +197,8 @@ class PocoBase():
         for num in range(0, 30):
             if self.poco("数据加载中").exists():
                 sleep(1)
+            if self.poco("正在登录中...").exists():
+                sleep(1)
             else:
-                sleep(2)
+                sleep(0.5)
                 break

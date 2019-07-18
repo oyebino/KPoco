@@ -17,7 +17,7 @@ class db_opertor:
     def open(self):
         self.db = pymysql.connect(host=self.host, user=self.user,
                           password=self.password, port=self.port,
-                          database=self.database)
+                          database=self.database, charset="utf8")
         # 游标对象
         self.cur = self.db.cursor()
 

@@ -19,7 +19,7 @@ class PayCouponPage(PocoBase):
 	def use_scoreCoupon(self,isall = True):
 		"""停车场积分抵扣金额"""
 		try:
-			self.touch(Template(BASE_DIR + r"\img\停车场积分抵扣金额开关.png", threshold=0.7, target_pos=5, rgb=False, record_pos=(0.321, -0.199),resolution=(1080, 1920)))
+			self.touch(Template(BASE_DIR + r"\img\停车场积分抵扣金额开关.png", threshold=0.7, target_pos=2, rgb=False, record_pos=(0.321, -0.199),resolution=(1080, 1920)))
 			self.log.info("点击开启停车场积分抵扣开关")
 			# self.screenshot("开启停车场积分抵扣开关界面")
 			if self.exists_pic(Template(BASE_DIR + r"\img\抵扣金额.png", threshold=0.7, record_pos=(-0.291, -0.069),resolution=(1080, 1920))):
@@ -83,7 +83,7 @@ class PayCouponPage(PocoBase):
 			self.click(self.poco("优惠券"))
 			self.log.info("成功点击优惠劵")
 			if self.exists_poco(self.poco(businessCoupon_name)):
-				self.click(self.poco(businessCoupon_name))
+				# self.click(self.poco(businessCoupon_name))
 				self.click(self.poco("确定"))
 				self.log.info("成功选择商家劵【{}】".format(businessCoupon_name))
 				self.screenshot("选择商家劵界面")
